@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<title>Rock, Paper, Scissor - v3</title>
+
+		<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<![endif]-->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'> 
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/main.js" async></script>
+	</head>
+
+	<body>
+	    <header>
+            <h1 class="topHead">ROCK <span class="star">*</span> PAPER <span class="star">*</span> SCISSORS </h1>
+        </header>
+		<main>
+            	
+			<div class="prompt clearfix">
+				<h2>CLICK ONE: <div id="result"></div></h2>	
+				<div class="choice">
+                    <div class="rock">
+                       <span class="shake">
+                           <span class="icon-diamond" onclick="startUp(id)" id ="Rock"></span>
+                       </span>    
+                    </div>
+                    <div class="paper">   
+                       <span class="fly">            
+                            <span class="icon-paperplane" onclick="startUp(id)" id ="Paper"></span>
+                       </span>
+                    </div>           
+                    <div class="scissor">
+                       <span class="spin">
+                            <span class="icon-scissors" onclick="startUp(id)" id ="Scissor"></span>
+                       </span>
+                    </div>
+                </div>
+			</div>
+			<div class="scoreBoard clearfix">
+   			    <div class="PC clearfix">
+                    <div class="col1">
+                        <h2>Player  vs.</h2>
+                        <div id="you"></div>			    
+                    </div>
+                    <div class="col2">
+                        <h2>Computer</h2>
+                      <div id="computer"></div>
+                    </div>
+                </div>
+	        </div>
+	        
+ 			
+
+		</main>
+
+	</body>
+</html>
