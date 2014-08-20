@@ -84,6 +84,7 @@ main {
     }
 .paper { 
     float: left;
+    margin-left: 35px;
     
     
 }
@@ -92,6 +93,76 @@ main {
    float: left;
     
 }
+
+
+
+.sideContainer {
+ position: relative;
+    top: -350px;
+}
+#tab {
+    
+    background-color: #000;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    width: 70px;
+    height: 105px;
+    display: inline;
+    top: 65px;
+    float: right;
+    position: relative;
+    
+}
+.show {
+    float: right;    
+    padding-top: 10px;
+    background: #000;
+    width: 180px;
+    display: block;
+    height: 220px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    
+}
+.hide {
+    float: right;    
+    padding-top: 10px;
+    background: #000;
+    width: 180px;
+    display: none;
+    height: 220px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    
+}
+
+.sB {
+    color: #fff;
+    transform:rotate(270deg);  
+}
+#box1 {
+    color: #fff;
+    text-align: left;
+    position: relative;
+    top: -350px;
+    right: -185px;
+    float: right;
+}
+#box1 a {
+ color: #ff0000;   
+}
+h2 .ga {
+   margin-top: 20px;
+}
+#winner, #loser, #even {
+    margin-bottom: 5px;
+    padding-right: 30px;
+    text-align: right;
+    color: #fff;
+}
+
+
+/* All animation of elements on the screen */
 
 /* Shaking Rock positioning */
 @-webkit-keyframes shakeItUp {
