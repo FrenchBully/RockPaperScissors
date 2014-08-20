@@ -14,25 +14,29 @@ function computerChoice() {
     
 }
 
+var result ="";
 
 //This is the function that compares the varous outcomes of the game.
 function startUp(userInput) {   
 var compuServe = computerChoice();
+    
     if (compuServe === userInput) 
     { 
-            document.getElementById('result').innerHTML = "A tie is better than nothing";
+           result = document.getElementById('result').innerHTML = "A tie is better than nothing";
+           
     }
     else if (userInput === "Rock") 
     {
         if (compuServe === "Paper") 
         {
-            document.getElementById('result').innerHTML = "You Lost";
-          
+            result = document.getElementById('result').innerHTML = "You Lost";
+
+         
         }
         else 
         {
-            document.getElementById('result').innerHTML = "You Won";
-        
+            result = document.getElementById('result').innerHTML = "You Won";
+
         }
     }    
     else if (userInput === "Paper") 
@@ -40,12 +44,13 @@ var compuServe = computerChoice();
         
         if (compuServe === "Scissor") 
         {
-            document.getElementById('result').innerHTML = "You Lost";
-            
+            result = document.getElementById('result').innerHTML = "You Lost";
+           
+
         }
         else 
         {
-            document.getElementById('result').innerHTML = "You Won";
+            result = document.getElementById('result').innerHTML = "You Won";
 
         }    
     } 
@@ -53,41 +58,61 @@ var compuServe = computerChoice();
     {
         if (compuServe === "Rock") 
         {
-            document.getElementById('result').innerHTML = "You Lost";
-           
+            result = document.getElementById('result').innerHTML = "You Lost";
+
         }
         else 
         {
-            document.getElementById('result').innerHTML = "You Won";
+            result = document.getElementById('result').innerHTML = "You Won";
+    
 
         }
-    } 
-    
-  
+    }
     document.getElementById('you').innerHTML = userInput;
     document.getElementById('computer').innerHTML = compuServe;
- 
- 
+    counter();
+   
+
+  
+}
+
+// Function that adds up the results
+var won =0;
+var lost =0;
+var tied =0;
 
 
+
+function counter() 
+{
+
+    if (result === "You Won") 
+    {
+     won +=1;   
+    }
+    else if (result === "You Lost")
+    {
+      lost +=1;
+    }
+    else
+    {
+      tied +=1;   
+    }
+    
+    
+    
+
+document.getElementById('winner').innerHTML = won;
+document.getElementById('loser').innerHTML =lost;
+document.getElementById('even').innerHTML = tied;
+   
     
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+function hide() {
+  // Get the DOM reference
+  var contentId = document.getElementById("doIt");
+  // Toggle 
+  contentId.style.display == "block" ? contentId.style.display = "none" : 
+contentId.style.display = "block"; 
+}

@@ -14,9 +14,11 @@
         <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'> 
         <link rel="stylesheet" href="css/style.css">
         <script src="js/main.js" async></script>
+
 	</head>
 
 	<body>
+	
 	    <header>
             <h1 class="topHead">ROCK <span class="star">*</span> PAPER <span class="star">*</span> SCISSORS </h1>
         </header>
@@ -55,9 +57,20 @@
                 </div>
 	        </div>
 	        
- 			
-
 		</main>
+       <div id="rightSideBar">
+            <div class="sideContainer">
+                <div id="doIt" class="show" style="display:block"></div>   
+                <div id="tab" onclick="hide()"><h2 class="sB" >Score Board</h2></div>             
+            </div>
 
+            <div id="box1">
+               <h2 class="ga">Games</h2>
+               <span>Won: <div id="winner"></div></span>
+               <span>Lost: <div id="loser"></div></span>
+               <span>Tied: <div id="even"></div></span>
+               <a href="index.html">Reset</a>
+            </div>
+	   </div>
 	</body>
 </html>
